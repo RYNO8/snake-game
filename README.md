@@ -1,6 +1,7 @@
 # snake-game
 Snake AI, with templates to add your own snake
 
+install `pkg_resources`, `pygame`, `pyglet`
 run `run.py` (tested with python3.5, python3.6)
 
 ## Testing your own snake
