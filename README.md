@@ -6,6 +6,8 @@ run `run.py` (tested with python3.5, python3.6)
 ## Testing your own snake
 Your job is to make a snake program which returns one of {"U", "D", "L", "R"}, so that is survives for the longest time.
 
+You may find that is it useful to use `import snakegame.common`
+
 You can test your snake against other snakes by using `run.py`. 
 
 create a function which takes:
