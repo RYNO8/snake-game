@@ -136,6 +136,7 @@ def unionfind_bot(board, pos):
 # Leave the if statement as is, otherwise I won't be able to run your bot with
 # the other bots.
 if __name__ == '__main__':
-        p = PygletSnakeEngine(25, 25, 50, wrap=True)
+        from snakegame.engines.pyglet import PygletEngine
+        p = PygletEngine(25, 25, 50, wrap=True)
         p.add_bot(unionfind_bot)
         p.run()

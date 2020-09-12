@@ -110,6 +110,7 @@ def matt_old_bot(board, val):
         return best_with_app(board, choices, x, y, w, h)
     
 def safe_bot(board, val):
+    print(board, val)
     x, y = val
     enemies=0
     me=board[y][x]
@@ -123,11 +124,13 @@ def safe_bot(board, val):
         return best_no_app(choices)
     else:
         return matt_old_bot(board, (x,y))
+    
 # Test code to run the snake game.
 # Leave the if statement as is, otherwise I won't be able to run your bot with
 # the other bots.
 if __name__ == '__main__':
-        p = PygletSnakeEngine(25, 25, 50, wrap=True)
-        p.add_bot(matt_bot)
-        p.add_bot(safe_bot)
-        p.run()
+    from snakegame.engines.pyglet import PygletEngine
+    p = PygletEngine(25, 25, 50, wrap=True)
+    p.add_bot(matt_old_bot)
+    p.add_bot(safe_bot)
+    p.run()

@@ -1,5 +1,4 @@
-from string import ascii_lowercase as lowercase, ascii_uppercase as uppercase
-alphabet = lowercase + uppercase
+from string import ascii_lowercase as lowercase, ascii_uppercase as uppercase, ascii_letters as alphabet
 
 directions = {
     'U': (0, -1),
